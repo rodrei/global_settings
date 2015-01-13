@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Rodrigo Pavano"]
   spec.email         = ["rodrigopavano@gmail.com"]
   spec.summary       = %q{Gem that provides an easy way to configure your app via ENV vars or yml files}
-  #spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.description   = %q{Gem that provides an easy way to configure your app via ENV vars or yml files}
+  spec.homepage      = "https://github.com/rodrei/global_settings"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "activesupport", "~> 4.1.0"
+  spec.add_runtime_dependency "activesupport", "~> 4.1"
   spec.add_runtime_dependency "tender_hash", "~> 0.0.3"
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
