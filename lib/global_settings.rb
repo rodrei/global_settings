@@ -45,3 +45,5 @@ module GlobalSettings
   end
 
 end
+
+Settings = GlobalSettings unless defined?(Settings)
