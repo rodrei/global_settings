@@ -16,7 +16,8 @@ module GlobalSettings
     end
 
     def to_hash
-      YAML.load_file(yml_settings_path).deep_symbolize_keys!
+      hash = YAML.load_file(yml_settings_path)
+      hash ? hash.deep_symbolize_keys! : {}
      rescue Errno::ENOENT
        puts "Could not load settings from settings.yml file for #{@environment} environment"
        {}
